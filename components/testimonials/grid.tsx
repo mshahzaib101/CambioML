@@ -21,7 +21,7 @@ export const TestimonialsGrid = () => {
               <div className="flex gap-2 items-center mt-8">
                 <Image
                   src={testimonial.src}
-                  alt="Manu Arora"
+                  alt="Mickel"
                   width={40}
                   height={40}
                   className="rounded-full"

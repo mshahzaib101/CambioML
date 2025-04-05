@@ -5,7 +5,7 @@ import {
   StreamingLog,
   ToolCall,
   ToolCallCancellation,
-} from "../multimodal-live-types";
+} from "../../multimodal-live-types";
 
 /**
  * Common interface for AI client events regardless of provider

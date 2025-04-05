@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { StreamingLog } from "../multimodal-live-types";
-import { mockLogs } from "../components/ai-hub/logger/mock-logs";
 
 interface StoreLoggerState {
   maxLogs: number;
@@ -11,7 +10,7 @@ interface StoreLoggerState {
 
 export const useLoggerStore = create<StoreLoggerState>((set, get) => ({
   maxLogs: 500,
-  logs: [], //mockLogs,
+  logs: [],
   log: ({ date, type, message }: StreamingLog) => {
     set((state) => {
       const prevLog = state.logs.at(-1);

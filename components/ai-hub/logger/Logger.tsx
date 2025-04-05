@@ -2,12 +2,19 @@
 
 import { useLoggerStore } from "../../../lib/store-logger";
 import { cn } from "@/lib/utils";
+import {
+  LiveOutgoingMessage,
+  LiveIncomingMessage,
+  isClientContentMessage,
+  isServerContentMessage,
+  isModelTurn,
+} from "../../../multimodal-live-types";
 
 export interface StreamingLog {
   date: Date;
   type: string;
   source?: string;
-  message: any; // Use any type to accommodate all possible message formats
+  message: LiveOutgoingMessage | LiveIncomingMessage | any;
   count?: number;
 }
 
@@ -80,7 +87,7 @@ export default function Logger({ filter = "none" }: LoggerProps) {
 
           // Handle client.send (user) messages
           if (log.type === "client.send" && typeof log.message === "object") {
-            if (log.message.clientContent) {
+            if (isClientContentMessage(log.message)) {
               // This is a normal user message
               const { clientContent } = log.message;
               messageContent = (
@@ -106,7 +113,10 @@ export default function Logger({ filter = "none" }: LoggerProps) {
             log.type === "server.content" &&
             typeof log.message === "object"
           ) {
-            if (log.message.serverContent?.modelTurn) {
+            if (
+              isServerContentMessage(log.message) &&
+              isModelTurn(log.message.serverContent)
+            ) {
               // This is a normal AI response message
               const { modelTurn } = log.message.serverContent;
               messageContent = (

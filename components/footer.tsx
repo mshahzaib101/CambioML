@@ -10,7 +10,7 @@ export const Footer = () => {
     },
     {
       name: "Blog",
-      href: "/blog",
+      href: "/",
     },
     {
       name: "Contact",

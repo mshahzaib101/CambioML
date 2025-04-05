@@ -70,7 +70,7 @@ const Cursor = ({
           textClassName
         )}
       >
-        {text ?? "Manu Arora"}
+        {text ?? "Mickel"}
       </div>
     </div>
   );

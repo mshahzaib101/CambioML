@@ -14,9 +14,6 @@ export const metadata: Metadata = {
   title: "Pricing | CambioML",
   description:
     "CambioML is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
-  openGraph: {
-    images: ["https://cambioml.ai/banner.png"],
-  },
 };
 
 export default function PricingPage() {

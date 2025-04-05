@@ -9,14 +9,14 @@ export const SkeletonFive = () => {
       <div className="flex absolute inset-0 flex-col group-hover:-translate-y-80 transition duration-200 items-center justify-center">
         <Container>
           <Image
-            src="/avatar.png"
+            src="/avatar.webp"
             className="h-16 w-16 rounded-md object-cover"
             alt="avatar"
             width="100"
             height="100"
           />
         </Container>
-        <p className="mt-4 text-sm text-neutral-400 font-bold">Manu Arora</p>
+        <p className="mt-4 text-sm text-neutral-400 font-bold">Mickel</p>
         <div className="flex items-center gap-2 text-xs mt-4">
           <p>Most engagements</p>
           <div className="h-1 w-1 rounded-full bg-neutral-400" />

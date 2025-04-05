@@ -18,7 +18,6 @@ CambioML is a Next.js-based platform that provides seamless integration with mul
 ├── app/                      # Next.js application directory
 │   ├── (auth)/               # Authentication related routes
 │   ├── (platform)/           # Main application routes
-│   │   ├── blog/             # Blog pages
 │   │   ├── contact/          # Contact pages
 │   │   ├── features/         # Feature showcase pages
 │   │   ├── pricing/          # Pricing pages

@@ -47,7 +47,7 @@ export const ContactForm = () => {
           <input
             id="name"
             type="text"
-            placeholder="Manu Arora"
+            placeholder="Mickel"
             className="h-10 pl-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
           />
         </div>

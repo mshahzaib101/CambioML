@@ -94,10 +94,12 @@ export const Hero = () => {
 export const Card = ({
   rotate,
   translate,
+  scale,
   children,
 }: {
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
+  scale: MotionValue<number>;
   children: React.ReactNode;
 }) => {
   return (

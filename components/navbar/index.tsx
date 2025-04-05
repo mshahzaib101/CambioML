@@ -15,7 +15,7 @@ const navItems = [
 
   {
     title: "Blog",
-    link: "/blog",
+    link: "/",
   },
   {
     title: "Contact",
